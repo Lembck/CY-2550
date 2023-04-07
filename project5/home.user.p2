@@ -1,0 +1,21 @@
+# Last Modified: Thu Mar 30 16:43:40 2023
+#include <tunables/global>
+
+/home/michael/p2 {
+  /tmp/project* rw,
+  /home/michael/.project2/config w,
+  /var/log/syslog r,
+  /etc/fstab r,
+  /proc/version r,
+  /proc/buddyinfo r,
+  /etc/crontab r,
+  /run/systemd/resolve/stub-resolv.conf r,
+  /etc/passwd r,
+  /etc/hosts r,
+  network tcp,
+  /usr/lib/x86_64-linux-gnu/libpthread-2.31.so mr,
+  /usr/lib/x86_64-linux-gnu/libc-2.31.so mr,
+  /usr/lib/x86_64-linux-gnu/libdl-2.31.so mr,
+  /proc/stat r,
+  /usr/lib/x86_64-linux-gnu/libnss_compat-2.31.so mr,
+}
